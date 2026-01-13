@@ -1,88 +1,99 @@
-# IPL 2025 Exploratory Data Analysis (EDA)
+# IPL 2025 – Exploratory Data Analysis (EDA)
 
-## 📌 Project Overview
-This project performs an **Exploratory Data Analysis (EDA)** on IPL 2025 player statistics using batting and bowling datasets.  
-The goal is to analyze **player performance**, **team strength**, and **all-rounder impact** using data-driven insights and visualizations.
+## 📌 Overview
+This project presents an **Exploratory Data Analysis (EDA)** of the IPL 2025 season, focusing on both individual and team-level performance using batting and bowling statistics.  
 
-The analysis was performed using **Python**, **Pandas**, **Matplotlib**, and **Seaborn** in **Google Colab**, and results are published on GitHub.
-
----
-
-## 📂 Dataset Used
-- `IPL2025Batters.csv` – Batting statistics of IPL 2025 players  
-- `IPL2025Bowlers.csv` – Bowling statistics of IPL 2025 players  
+The analysis emphasizes **fair comparisons, weighted metrics, and clear visualizations** to derive meaningful insights while regaining hands-on coding practice.
 
 ---
 
-## ❓ Business / Analysis Questions
-
-### 1️⃣ For players who appear in both batting and bowling datasets (all-rounders), how does their batting strike rate compare with their bowling economy rate?
-This analysis identifies impactful all-rounders by comparing their attacking batting ability with bowling efficiency.
-
-**Visualization:**  
-![All Rounders Comparison](all_rounders_plot.png)
+## 🎯 Objectives
+- Analyze individual batting and bowling performances in IPL 2025  
+- Compare top performers against season-wide averages  
+- Evaluate team-level batting and bowling efficiency using weighted metrics  
+- Study the balance between batting and bowling efficiency across teams  
 
 ---
 
-### 2️⃣ Which team has the highest combined wickets (sum of wickets of all its bowlers)?
-This helps identify the strongest bowling unit in the tournament.
+## ❓ Questions Explored
 
-**Visualization:**  
-![Team Wickets](team_wickets_plot.png)
+1. For players who appear in both batting and bowling datasets (**all-rounders**), how does their **batting strike rate** compare with their **bowling economy rate**?  
+   **Visualization:**  
+   ![All Rounders Comparison](all_rounders_plot.png)
 
----
+2. Which team has the **highest total runs** by its batters?  
+   **Visualization:**  
+   ![Team Runs](team_runs_plot.png)
 
-### 3️⃣ Which team has the highest combined runs (sum of runs of all its batters)?
-This analysis highlights the most dominant batting team.
+3. Which team has the **highest total wickets** through its bowlers?  
+   **Visualization:**  
+   ![Team Wickets](team_wickets_plot.png)
 
-**Visualization:**  
-![Team Runs](team_runs_plot.png)
+4. Who are the **Top 10 all-rounders** based on batting strike rate and bowling economy?  
+   **Visualization:**  
+   ![Top 10 All Rounders](top10_allrounders_plot.png)
 
----
-
-### 4️⃣ What are the economy rate and strike rate of the top 10 all-rounders?
-Top-performing all-rounders are selected based on combined batting and bowling impact.
-
-**Visualization:**  
-![Top 10 All Rounders](top10_allrounders_plot.png)
-
----
-
-### 5️⃣ Is there a correlation between total team runs and total team wickets?
-This explores whether teams that score more runs also tend to take more wickets.
-
-**Visualizations:**  
-![Runs vs Wickets Scatter](team_correlation_plot.png)  
-![Correlation Heatmap](team_correlation_heatmap.png)
+5. Is there a **correlation between total team runs and total team wickets**?  
+   **Visualizations:**  
+   ![Runs vs Wickets Scatter](team_correlation_plot.png)  
+   ![Correlation Heatmap](team_correlation_heatmap.png)
 
 ---
 
-## 📊 Tools & Technologies Used
+## 📂 Dataset
+- **Source:** Kaggle (IPL 2025 dataset)  
+- Includes player-level batting and bowling statistics for IPL 2025  
+- Dataset is **not uploaded** to this repository due to licensing; refer to Kaggle for access  
+
+---
+
+## 🛠 Methodology
+- Cleaned data and converted types for consistency  
+- Applied **minimum threshold criteria** to avoid small-sample bias  
+  - Batting analysis: minimum balls faced  
+  - Bowling analysis: minimum overs bowled  
+- Computed **team-level efficiency metrics**:  
+  - Weighted Strike Rate for batting  
+  - Weighted Economy Rate for bowling  
+- Used **visualizations** (Matplotlib & Seaborn) for insights  
+
+---
+
+## 📈 Key Insights
+- Top all-rounders balance **high strike rate** with **low economy**, highlighting their impact  
+- Teams with stronger batting do not always have equally strong bowling  
+- Moderate correlation exists between **team runs** and **team wickets**  
+- Combined efficiency analysis highlights distinct **team strengths and weaknesses**  
+
+---
+
+## 🛠 Tools & Technologies
 - Python  
 - Pandas  
+- NumPy  
 - Matplotlib  
 - Seaborn  
 - Google Colab  
-- GitHub  
 
 ---
 
-## 🔑 Key Insights
-- Certain all-rounders balance high strike rates with low economy rates.
-- Teams with strong batting do not always have equally strong bowling.
-- A moderate correlation exists between team runs and wickets.
-- All-rounders play a crucial role in overall team performance.
+## ✅ Conclusion
+This project reinforced the importance of:  
+- Defining **fair metrics**  
+- Avoiding **misleading averages**  
+- Structuring a full **EDA workflow** on a real-world dataset  
 
 ---
 
-## 🚀 Future Improvements
-- Add match-wise analysis  
-- Include player consistency metrics  
-- Perform predictive modeling for player performance  
-- Create interactive dashboards using Power BI or Tableau  
+## 🔮 Future Scope
+- Extend analysis to **match-level or phase-wise performance**  
+- Compare IPL 2025 trends with **previous seasons**  
+- Create **interactive dashboards** for visual storytelling  
 
 ---
 
-## 📌 Author
+## 👤 Author
 **Shaik Anas**  
-Aspiring Data Analyst | Python | Data Visualization | EDA
+Aspiring Data Analyst | Python | Data Visualization | EDA  
+
+**GitHub Repository:** [https://github.com/Anassk-ds/IPL-2025-EDA](https://github.com/Anassk-ds/IPL-2025-EDA)
