@@ -39,7 +39,7 @@ The project explores **all-rounder performance**, **team efficiency**, and corre
 - Includes **player-level batting and bowling statistics**  
 - Not uploaded to this repo due to licensing — please download from Kaggle  
 
----
+--
 
 ## Methodology
 
