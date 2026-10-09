@@ -1,337 +1,172 @@
-# 🏏 IPL 2025 Exploratory Data Analysis
+# IPL 2025 Exploratory Data Analysis (EDA)
 
-**IPL 2025 Exploratory Data Analysis (EDA)** is a data science project by **Shaik Anas**, a B.Tech Data Science student at Chalapathi Institute of Technology.
+**Author:** [Shaik Anas](https://github.com/Anassk-ds)  
+**Focus:** Data Science · Data Analytics · Sports Analytics  
+**Notebook:** [`IPL_2025_EDA.ipynb`](./IPL_2025_EDA.ipynb)
 
-The project analyzes **IPL 2025 batting and bowling statistics** using Python and data-analysis libraries to explore player performance, team efficiency, all-rounder performance, and relationships between batting and bowling metrics.
+This project explores IPL 2025 player-level batting and bowling statistics using Python. It focuses on player performance, all-rounder comparisons, team batting and bowling metrics, and the relationship between team runs and wickets.
 
-> **Project by:** Shaik Anas  
-> **Focus:** Data Science • Data Analytics • Exploratory Data Analysis • Sports Analytics
-
----
-
-## 📌 Project Overview
-
-This project applies an end-to-end **Exploratory Data Analysis (EDA)** workflow to IPL 2025 player statistics.
-
-Rather than relying only on simple averages, the analysis uses **qualification thresholds, weighted metrics, data merging, statistical comparisons, and visualizations** to produce more meaningful comparisons between players and teams.
-
-The project focuses on:
-
-- 🏏 Player batting performance
-- 🎯 Player bowling performance
-- 🔄 All-rounder performance
-- 📊 Team batting efficiency
-- 🎳 Team bowling efficiency
-- 🔗 Relationship between team runs and wickets
-- 📈 Data visualization and correlation analysis
-
----
-
-## 🎯 Objectives
-
-The main objectives of this IPL 2025 data analysis project are to:
-
-- Analyze individual batting and bowling performances.
-- Compare top-performing players with season-wide averages.
-- Identify players who contribute in both batting and bowling.
-- Evaluate team-level batting and bowling efficiency.
-- Compare batting and bowling performance using weighted metrics.
-- Study the relationship between total team runs and total team wickets.
-- Present analytical findings through clear visualizations.
-
----
-
-## 🔍 Questions Explored
-
-The analysis answers the following questions:
-
-### 1. 🏏 All-Rounder Performance
-
-For players appearing in both the batting and bowling datasets:
-
-**How does batting strike rate compare with bowling economy rate?**
-
-### 2. 📊 Team Runs
-
-**Which team has the highest combined batting runs?**
-
-### 3. 🎳 Team Wickets
-
-**Which team has the highest combined bowling wickets?**
-
-### 4. ⭐ Top 10 All-Rounders
-
-**What are the strike rate and economy rate of the top 10 all-rounders?**
-
-### 5. 🔗 Team Correlation
-
-**Is there a relationship between total team runs and total team wickets?**
-
----
-
-## 📂 Dataset
-
-The project uses IPL 2025 player-level batting and bowling statistics.
-
-### Dataset Source
-
-**Kaggle — IPL 2025 Dataset**
-
-The repository does not include the original datasets. They should be downloaded separately and placed in the project directory.
-
-### Required Files
-
-```text
-IPL2025Batters.csv
-IPL2025Bowlers.csv
-```
-
-The datasets contain player-level statistics used for batting, bowling, all-rounder, team, and correlation analysis.
-
----
-
-## 🧹 Methodology
-
-The project follows a structured data-analysis workflow.
-
-### 1. Data Cleaning
-
-- Checked for missing values.
-- Converted data types where required.
-- Prepared the batting and bowling datasets for analysis.
-
-### 2. Qualification Filtering
-
-Minimum qualification thresholds were applied to reduce the effect of small sample sizes.
-
-**Batting:**
-- Minimum balls faced
-
-**Bowling:**
-- Minimum overs bowled
-
-This helps make player comparisons more meaningful.
-
-### 3. All-Rounder Identification
-
-The batting and bowling datasets were merged to identify players who contributed in both disciplines.
-
-This combined dataset was used to compare:
-
-- Batting Strike Rate
-- Bowling Economy Rate
-
-### 4. Team-Level Analysis
-
-Team statistics were aggregated to analyze:
-
-- Total runs
-- Total wickets
-- Batting efficiency
-- Bowling efficiency
-
-Weighted metrics were used where appropriate to provide more representative comparisons.
-
-### 5. Visualization
-
-The analysis uses multiple visualization techniques, including:
-
-- 📊 Bar charts
-- 📈 Scatter plots
-- 🔥 Correlation heatmaps
-
-These visualizations make player and team performance patterns easier to interpret.
-
----
-
-## 📊 Visualizations
-
-The project generates the following visualizations:
-
-| Visualization | File |
-|---|---|
-| 🏏 All-Rounder Performance | `all_rounders_plot.png` |
-| 📊 Team Runs | `team_runs_plot.png` |
-| 🎳 Team Wickets | `team_wickets_plot.png` |
-| ⭐ Top 10 All-Rounders | `top10_allrounders_plot.png` |
-| 🔗 Team Runs vs Wickets | `team_correlation_plot.png` |
-| 🔥 Correlation Heatmap | `team_correlation_heatmap.png` |
-
-### Example
-
-![All-Rounder Performance](all_rounders_plot.png)
-
-![Team Runs](team_runs_plot.png)
-
-![Team Wickets](team_wickets_plot.png)
-
-![Top 10 All-Rounders](top10_allrounders_plot.png)
-
-![Team Runs vs Wickets](team_correlation_plot.png)
-
-![Correlation Heatmap](team_correlation_heatmap.png)
-
----
-
-## 💡 Key Analytical Observations
-
-The analysis highlights several important patterns:
-
-- Top individual performers can significantly outperform season averages.
-- Team batting and bowling efficiencies vary across teams.
-- Strong batting efficiency does not necessarily imply equally strong bowling efficiency.
-- Team performance can involve a trade-off between batting and bowling strengths.
-- Correlation analysis provides a way to examine how effectively teams balance run production and wicket-taking.
-
-> These observations are based on the analysis performed in the project notebook.
-
----
-
-## 🛠️ Technologies Used
-
-### Programming & Analysis
-
-- 🐍 **Python**
-- 🐼 **Pandas**
-- 🔢 **NumPy**
-
-### Data Visualization
-
-- 📊 **Matplotlib**
-- 🎨 **Seaborn**
-
-### Development Environment
-
-- 📓 **Jupyter Notebook**
-- ☁️ **Google Colab**
-
----
-
-## 📁 Repository Structure
-
-```text
-IPL-2025-EDA/
-│
-├── IPL_2025_EDA.ipynb
-├── README.md
-│
-├── IPL2025Batters.csv          # Download separately
-├── IPL2025Bowlers.csv          # Download separately
-│
-├── all_rounders_plot.png
-├── team_runs_plot.png
-├── team_wickets_plot.png
-├── top10_allrounders_plot.png
-├── team_correlation_plot.png
-└── team_correlation_heatmap.png
-```
-
-> The CSV datasets are not included in the repository and should be obtained separately from the project data source.
-
----
-
-## ▶️ How to Run
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/Anassk-ds/IPL-2025-EDA.git
-```
-
-### 2. Open the project
-
-```bash
-cd IPL-2025-EDA
-```
-
-### 3. Open the notebook
-
-Open:
-
-```text
-IPL_2025_EDA.ipynb
-```
-
-using **Jupyter Notebook** or **Google Colab**.
-
-### 4. Add the datasets
-
-Place these files in the project directory:
-
-```text
-IPL2025Batters.csv
-IPL2025Bowlers.csv
-```
-
-### 5. Run the notebook
-
-Execute the notebook cells sequentially to reproduce the analysis and visualizations.
-
----
-
-## 📈 What I Learned
-
-This project helped strengthen practical skills in:
-
-- Data cleaning
-- Data preprocessing
-- Exploratory Data Analysis
-- Pandas data manipulation
-- Dataset merging
-- Statistical comparison
-- Weighted metrics
-- Data visualization
-- Correlation analysis
-- Analytical thinking
-- Presenting data-driven insights
-
-It also reinforced the importance of **choosing appropriate metrics and avoiding misleading comparisons caused by small sample sizes**.
-
----
-
-## 🔮 Future Scope
-
-Possible extensions to this project include:
-
-- Match-level IPL 2025 analysis
-- Phase-wise batting and bowling analysis
-- Powerplay, middle-over, and death-over comparisons
-- Comparison of IPL 2025 with previous IPL seasons
-- Interactive dashboards
-- Additional player performance metrics
-- Advanced sports analytics
-
----
-
-## 👨‍💻 About the Author
-
-### Shaik Anas
-
-**B.Tech Data Science Student | Software Developer | Data Science & ML Enthusiast**
-
-I am interested in **Data Science, Data Analytics, Machine Learning, Python, SQL, and Full-Stack Development**. I enjoy building practical projects and using technology to solve real-world problems.
-
-### 🔗 Connect With Me
-
-- **GitHub:** https://github.com/Anassk-ds
-- **LinkedIn:** https://www.linkedin.com/in/shaik-anas-b03a962a8/
+- **Repository:** https://github.com/Anassk-ds/IPL-2025-EDA
 - **Portfolio:** https://anassk-ds.github.io/Portfolio-Website/
-- **LeetCode:** https://leetcode.com/u/anas_shaik
+- **LinkedIn:** https://www.linkedin.com/in/shaik-anas-b03a962a8/
+
+## Project overview
+
+Exploratory Data Analysis (EDA) helps turn raw tables into questions that can be investigated with data. In this project, batting and bowling statistics are examined separately and then combined where appropriate to compare player and team performance.
+
+The notebook uses data cleaning, qualification thresholds, dataset merging, weighted metrics, charts, and correlation analysis. The goal is to make comparisons more informative and to consider how metric selection and sample size affect interpretation.
+
+## Questions explored
+
+1. **All-rounder comparison:** Among players present in both datasets, how do batting strike rate and bowling economy rate compare?
+2. **Team batting:** Which team has the highest combined runs in the batting data?
+3. **Team bowling:** Which team has the highest combined wickets in the bowling data?
+4. **Top all-rounders:** How do strike rate and economy rate compare for the selected top 10 all-rounders?
+5. **Team-level relationship:** What relationship, if any, appears between total team runs and total team wickets?
+
+The questions above describe the scope of the notebook. Consult the executed notebook and its charts for the actual values and conclusions.
+
+## Dataset
+
+The project uses IPL 2025 player-level batting and bowling statistics sourced from Kaggle. The original CSV files are not stored in this repository; download the dataset separately and check its source page for applicable terms and attribution requirements.
+
+Required files:
+
+- `IPL2025Batters.csv`
+- `IPL2025Bowlers.csv`
+
+Place both files in the project root directory, alongside `IPL_2025_EDA.ipynb`. The filenames should match the names used in the notebook.
+
+## Tools and technologies
+
+- **Python** — analysis workflow
+- **Pandas** — data loading, cleaning, transformation, and aggregation
+- **NumPy** — numerical operations
+- **Matplotlib** — charts
+- **Seaborn** — statistical visualizations
+- **Jupyter Notebook / Google Colab** — interactive analysis
+
+## Methodology
+
+### 1. Inspect and prepare the data
+Review the batting and bowling tables, check missing values, and convert data types where required.
+
+### 2. Apply qualification thresholds
+Use minimum balls-faced and overs-bowled thresholds when comparing players. These filters help reduce the risk of drawing conclusions from very small samples. The exact thresholds should be checked in the notebook.
+
+### 3. Identify all-rounders
+Merge the batting and bowling datasets to identify players represented in both tables, then compare their batting strike rates and bowling economy rates.
+
+### 4. Aggregate team statistics
+Summarize runs and wickets at team level and calculate weighted batting and bowling metrics where appropriate. Review the notebook's formulas and column definitions when interpreting these metrics.
+
+### 5. Visualize and interpret
+Use bar charts, scatter plots, and a correlation heatmap to inspect differences and relationships. Correlation describes association in the analyzed data; it does not by itself establish causation.
+
+## Visualizations
+
+The notebook is set up to generate these output files:
+
+| Visualization | Output file |
+|---|---|
+| All-rounder performance | `all_rounders_plot.png` |
+| Team runs | `team_runs_plot.png` |
+| Team wickets | `team_wickets_plot.png` |
+| Top 10 all-rounders | `top10_allrounders_plot.png` |
+| Team runs vs. wickets | `team_correlation_plot.png` |
+| Correlation heatmap | `team_correlation_heatmap.png` |
+
+If the image files have been generated and committed to the repository, you can preview them below. If they are not yet present in the repository, run the notebook and commit the generated files first.
+
+<!-- Uncomment each image line only after confirming the corresponding PNG is committed in the repository. -->
+<!-- ![All-rounder performance](./all_rounders_plot.png) -->
+<!-- ![Team runs](./team_runs_plot.png) -->
+<!-- ![Team wickets](./team_wickets_plot.png) -->
+<!-- ![Top 10 all-rounders](./top10_allrounders_plot.png) -->
+<!-- ![Team runs versus wickets](./team_correlation_plot.png) -->
+<!-- ![Team correlation heatmap](./team_correlation_heatmap.png) -->
+
+## Run the project
+
+### Option A: Run locally
+
+1. Install Python and Git if they are not already installed.
+2. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Anassk-ds/IPL-2025-EDA.git
+   cd IPL-2025-EDA
+   ```
+
+3. Create and activate a virtual environment (optional, but recommended):
+
+   **Windows**
+   ```bash
+   python -m venv .venv
+   .venv\Scripts\activate
+   ```
+
+   **macOS / Linux**
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
+
+4. Install the required libraries:
+
+   ```bash
+   python -m pip install pandas numpy matplotlib seaborn jupyter
+   ```
+
+5. Download the dataset from its Kaggle source and place `IPL2025Batters.csv` and `IPL2025Bowlers.csv` in the repository root.
+6. Launch Jupyter:
+
+   ```bash
+   jupyter notebook
+   ```
+
+7. Open `IPL_2025_EDA.ipynb` and run the cells in order.
+
+### Option B: Use Google Colab
+
+1. Open the notebook file from the repository.
+2. Upload the two CSV files to the Colab session, or mount storage containing them.
+3. Confirm the notebook's file paths match where you placed the CSV files.
+4. Run the cells from top to bottom.
+
+> **Reproducibility note:** Notebook paths, dataset column names, and qualification thresholds must match the actual files. If your local dataset uses different column names or filenames, update the notebook accordingly.
+
+## Interpretation notes
+
+- Strike rate and economy rate measure different aspects of performance; compare them in context rather than treating them as interchangeable.
+- Qualification thresholds can change which players appear in comparisons.
+- Weighted metrics depend on their exact formula and denominator. Refer to the notebook before interpreting a weighted value.
+- Team runs and team wickets summarize different outcomes; a correlation between them does not mean one causes the other.
+- Dataset coverage and column definitions affect the conclusions. Mention these limitations when presenting findings.
+
+## Future improvements
+
+Possible extensions include:
+
+- Compare IPL 2025 with earlier seasons.
+- Add match-level or innings-phase analysis.
+- Explore powerplay, middle-over, and death-over performance if the required data is available.
+- Add an interactive dashboard.
+- Document exact metric formulas and qualification thresholds in the notebook and README.
+
+## About the author
+
+**Shaik Anas** is a B.Tech CSE (Data Science) student at Chalapathi Institute of Technology, interested in data analysis, Python, machine learning, and software development.
+
+- GitHub: https://github.com/Anassk-ds
+- LinkedIn: https://www.linkedin.com/in/shaik-anas-b03a962a8/
+- Portfolio: https://anassk-ds.github.io/Portfolio-Website/
+- LeetCode: https://leetcode.com/u/anas_shaik
+
+## Feedback
+
+If you find an issue with the analysis or have a suggestion for an extension, open a GitHub issue or connect through one of the profiles above.
 
 ---
 
-## ⭐ Project
-
-If you find this project useful or interesting, consider giving the repository a ⭐.
-
-**Built with Python, data analysis, and curiosity for cricket analytics. 🏏📊**
-
----
-
-<div align="center">
-
-### 🚀 Analyze • Learn • Build • Improve
-
-**© Shaik Anas**
-
-</div>
+*This project is an educational data-analysis exercise. Refer to the source dataset and the notebook for the data and calculations used.*
